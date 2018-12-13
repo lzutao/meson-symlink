@@ -7,6 +7,7 @@
 # LICENSE file in the root directory of this source tree) and the GPLv2 (found
 # in the COPYING file in the root directory of this source tree).
 # #############################################################################
+# This file should be synced with https://github.com/lzutao/meson-symlink
 
 import os
 import pathlib  # since Python 3.4
