@@ -40,7 +40,7 @@ def main():
       help='dst is a directory')
   parser.add_argument('-m', '--mode',
       help='directory mode on creating if not exist',
-      default='0o777')
+      default='0o755')
   args = parser.parse_args()
 
   dir_mode = int(args.mode, 8)
