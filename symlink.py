@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # #############################################################################
-# Copyright (c) 2018-present    lzutao <taolzu(at)gmail.com>
+# Copyright (c) 2018-present  lzutao <taolzu(at)gmail.com>
 # All rights reserved.
 #
 # This source code is licensed under both the BSD-style license (found in the
@@ -37,7 +37,7 @@ def main():
   parser.add_argument('install_dir', help='installation directory')
   parser.add_argument('-d', '--isdir',
       action='store_true',
-      help='dst is a directory')
+      help='dest is a directory')
   parser.add_argument('-m', '--mode',
       help='directory mode on creating if not exist',
       default='0o755')

@@ -10,13 +10,13 @@ root privileged if wanted to install a symlink in system directories.
 Place `symlink.py` in root directory of your project.
 Use this snippet in `meson.build`:
 
-```py
+```meson
 meson.add_install_script('symlink.py', 'dash', 'sh', get_option('bindir'))
 ```
 
 You could use this script standalone without Meson:
 
-```sh
+```r2
 % python3 symlink.py -h
 usage: symlink.py [-h] [-d] [-m MODE] source dest install_dir
 
@@ -32,7 +32,6 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  -d, --isdir           dst is a directory
+  -d, --isdir           dest is a directory
   -m MODE, --mode MODE  directory mode on creating if not exist
-%
 ```
