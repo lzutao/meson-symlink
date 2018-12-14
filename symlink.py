@@ -13,7 +13,7 @@ import os
 import pathlib  # since Python 3.4
 
 
-def install_symlink(src, dst, install_dir, dst_is_dir=False, dir_mode=0o777):
+def install_symlink(src, dst, install_dir, dst_is_dir=False, dir_mode=0o755):
   if not install_dir.exists():
     install_dir.mkdir(mode=dir_mode, parents=True, exist_ok=True)
   if not install_dir.is_dir():
